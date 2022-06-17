@@ -13,6 +13,6 @@ Laravel è un framework open source di tipo MVC scritto in PHP per lo sviluppo d
 Alcune delle caratteristiche sono: un sistema di gestione dei pacchetti modulare con un gestore delle dipendenze dedicato, differenti modalità di accesso ai database relazionali, strumenti che aiutano la distribuzione e la manutenzione dell'applicazione, e la sua disposizione al Syntactic sugar.
 
 
-## License
+## Licenza
 
 Distribuito con licenza [MIT](https://opensource.org/licenses/MIT).
