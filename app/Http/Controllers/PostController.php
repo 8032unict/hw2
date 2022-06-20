@@ -58,8 +58,8 @@ class PostController extends Controller{
         if(session('username') == null){
             return redirect('login');
         }
-        $posts =  Post::where('title','LIKE',$q)->where('story','LIKE',$q)->orderBy('postID','desc')->get();
-        $count = Post::where('title','LIKE',$q)->where('story','LIKE',$q)->orderBy('postID','desc')->count();
+        $posts =  Post::where('title','LIKE',$q)->orWhere('story','LIKE',$q)->orderBy('postID','desc')->get();
+        $count = Post::where('title','LIKE',$q)->orWhere('story','LIKE',$q)->orderBy('postID','desc')->count();
         if($count ==  0){
             $array = array(['found'=>false]);
             return $array;
